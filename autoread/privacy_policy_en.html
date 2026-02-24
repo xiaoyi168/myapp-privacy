@@ -89,11 +89,55 @@
 
         <h2>3. Permissions We Request</h2>
 
-        <h3>3.1 Accessibility Permission</h3>
+        <h3>3.1 Accessibility Service Permission</h3>
+        <div class="highlight">
+            <strong>Important Disclosure: Accessibility Service Usage</strong>
+        </div>
+        <p><strong>Why We Need This Permission:</strong></p>
         <ul>
-            <li><strong>Purpose:</strong> Enable automatic clicking, swiping and other automation operations</li>
-            <li><strong>Use Case:</strong> Used when executing automation tasks you set</li>
-            <li><strong>Note:</strong> This is essential permission for the app's core functionality</li>
+            <li>Enable automatic screen swiping and gesture operations</li>
+            <li>Allow hands-free content browsing</li>
+            <li>This is the foundation of the app's core functionality</li>
+        </ul>
+        
+        <p><strong>Specific Features Using This Permission:</strong></p>
+        <ul>
+            <li>Automatic screen swiping (up, down, left, right directions)</li>
+            <li>Custom gesture path execution</li>
+            <li>Scheduled automation tasks</li>
+            <li>Repeat action automation</li>
+        </ul>
+        
+        <p><strong>How We Use Accessibility Service:</strong></p>
+        <ul>
+            <li><strong>Only executes actions YOU explicitly configure:</strong> The app will not automatically perform any actions you haven't set</li>
+            <li><strong>Only active when YOU start tasks:</strong> The service only runs when you actively start automation tasks</li>
+            <li><strong>Does NOT collect any data:</strong> Does not read, collect, or transmit your screen content, personal information, or app data</li>
+            <li><strong>Local processing:</strong> All operations are completed on your device locally, no network connection needed</li>
+            <li><strong>No background activity:</strong> Accessibility service does not remain active in background after app is closed or tasks are stopped</li>
+        </ul>
+        
+        <p><strong>Your Control:</strong></p>
+        <ul>
+            <li>You can disable this service anytime through System Settings → Accessibility → AutoRead</li>
+            <li>The app will not be able to perform automation functions after disabling</li>
+            <li>You have complete control over when to start and stop automation tasks</li>
+        </ul>
+        
+        <p><strong>Privacy Commitment:</strong></p>
+        <ul>
+            <li>We <strong>will NOT</strong> use accessibility service to collect your personal information</li>
+            <li>We <strong>will NOT</strong> read or record your screen content</li>
+            <li>We <strong>will NOT</strong> track your app usage behavior</li>
+            <li>We <strong>will NOT</strong> access or transmit data from other apps</li>
+            <li>We <strong>will NOT</strong> perform any operations without your permission</li>
+        </ul>
+        
+        <p><strong>Technical Details:</strong></p>
+        <ul>
+            <li><strong>Usage Scenario:</strong> Only performs swipe operations within apps you specify</li>
+            <li><strong>Permission Scope:</strong> Limited to executing touch and swipe gestures only</li>
+            <li><strong>Data Access:</strong> Does not access any app content or user data</li>
         </ul>
 
         <h3>3.2 Overlay Permission</h3>
